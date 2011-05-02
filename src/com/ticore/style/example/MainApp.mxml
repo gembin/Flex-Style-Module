@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+		xmlns:s="library://ns.adobe.com/flex/spark"
+		xmlns:mx="library://ns.adobe.com/flex/mx" fontSize="14">
+	<fx:Declarations>
+		<fx:String id="stylePath">Style.swf</fx:String>
+		<fx:String id="styleModPath">com/ticore/style/example/MyStyleMod.swf</fx:String>
+	</fx:Declarations>
+	<fx:Style>
+		@namespace s "library://ns.adobe.com/flex/spark";
+		@namespace mx "library://ns.adobe.com/flex/mx";
+		
+		s|Button.myStyle01 {
+			fontWeight: bold;
+		}
+		s|Button#btn1 {
+			fontStyle: italic;
+		}
+	</fx:Style>
+	<s:layout>
+		<s:VerticalLayout verticalAlign="middle" horizontalAlign="center" />
+	</s:layout>
+	
+	<s:HGroup styleName="group1">
+		<s:Button label="Load Style" id="btn0" styleName="myStyle01" height="40"
+				click="styleManager.loadStyleDeclarations(stylePath);" />
+		<s:Button label="Unload Style" id="btn1" styleName="myStyle02" height="40"
+				click="styleManager.unloadStyleDeclarations(stylePath);" />
+	</s:HGroup>
+	
+	<s:HGroup styleName="group2">
+		<s:Button label="Load StyleMod01" height="40"
+				click="styleManager.loadStyleDeclarations(styleModPath);" />
+		<s:Button label="Unload StyleMod01" height="40"
+				click="styleManager.unloadStyleDeclarations(styleModPath);" />
+	</s:HGroup>
+	
+</s:Application>

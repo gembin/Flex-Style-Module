@@ -1,0 +1,26 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace sys "mx.managers.*";
+
+s|Application {
+	backgroundColor: #404040;
+}
+
+s|Group.group1 s|Button {
+	cornerRadius: 10;
+}
+
+s|Group.group2 s|Button {
+	color: #808080;
+}
+
+s|Button.myStyle01 {
+	color: #FF0000;
+	cls: ClassReference("com.ticore.style.example.effect.DummyClass");
+}
+
+s|Button.myStyle02 {
+	color: #0000FF;
+	fontSize: 20;
+}
