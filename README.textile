@@ -1,0 +1,23 @@
+h1. Flex Style Module
+
+A better way to creates external style swf file for flex application.
+Create flex module mxml and extends StyleModule class.
+Include external or declare style properties.
+
+h1. Pros
+
+* Style file could locate in any package folder.
+* A style module could contains multiple style files.
+* Able to optimize style module with flex application.
+
+h1. Style module sample code
+
+<pre><code>
+<?xml version="1.0" encoding="utf-8"?>
+<module:StyleModule
+		  xmlns:fx="http://ns.adobe.com/mxml/2009"
+		  xmlns:module="com.ticore.style.module.*">
+	 <fx:Style source="style/Style01.css"/>
+	 <fx:Style source="style/Style02.css"/>
+</module:StyleModule>
+</code></pre>
