@@ -1,11 +1,9 @@
 /* CSS file */
-@namespace s "library://ns.adobe.com/flex/spark";
-@namespace mx "library://ns.adobe.com/flex/mx";
 
-s|Button#btn0, s|Button#btn1 {
+Button {
 	chromeColor: #909090;
 	fontStyle: normal;
 	textDecoration: underline;
-	rollOverEffect: ClassReference("com.ticore.style.example.effect.ScaleUp");
-	rollOutEffect: ClassReference("com.ticore.style.example.effect.ScaleDown");
+	rollOverEffect: ClassReference("com.ticore.style.example.effect.BlurUp");
+	rollOutEffect: ClassReference("com.ticore.style.example.effect.BlurDown");
 }

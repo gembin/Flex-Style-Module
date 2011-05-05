@@ -1,37 +1,28 @@
 /* CSS file */
-@namespace s "library://ns.adobe.com/flex/spark";
-@namespace mx "library://ns.adobe.com/flex/mx";
 
-
-s|Application {
+Application {
 	backgroundColor: #404040;
 }
 
-s|Group.group1 s|Button {
+Button.myStyle01 {
 	cornerRadius: 10;
-}
-
-s|Group.group2 s|Button {
-	color: #808080;
-}
-
-s|Button.myStyle01 {
 	color: #FF0000;
 	cls: ClassReference("com.ticore.style.example.effect.DummyClass");
 }
 
-s|Button.myStyle02 {
+Button.myStyle02 {
+	cornerRadius: 10;
 	color: #0000FF;
 	fontSize: 20;
 	fontStyle: italic;
 }
 
-s|Button#btn0, s|Button#btn1 {
+Button {
 	chromeColor: #909090;
 	fontStyle: normal;
 	textDecoration: underline;
 	/* will generate an error when unload style.swf
-	rollOverEffect: ClassReference("com.ticore.style.example.effect.ScaleUp");
-	rollOutEffect: ClassReference("com.ticore.style.example.effect.ScaleDown");
+	rollOverEffect: ClassReference("com.ticore.style.example.effect.GlowUp");
+	rollOutEffect: ClassReference("com.ticore.style.example.effect.GlowDown");
 	*/
 }

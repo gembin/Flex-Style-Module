@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+		verticalAlign="middle" horizontalAlign="center">
+	<mx:Style>
+		global {
+			fontSize: 14;
+		}
+
+		Application {
+			backgroundColor: #FFFFFF;
+		}
+	</mx:Style>
+	
+	<mx:String id="stylePath">Style.swf</mx:String>
+	<mx:String id="styleModPath">com/ticore/style/example/MyStyleMod.swf</mx:String>
+	
+	<mx:HBox styleName="box1">
+		<mx:Button label="Load Style" styleName="myStyle01" height="40"
+				click="StyleManager.loadStyleDeclarations(stylePath);"/>
+		<mx:Button label="Unload Style" styleName="myStyle02" height="40"
+				click="StyleManager.unloadStyleDeclarations(stylePath);"/>
+	</mx:HBox>
+	
+	<mx:HBox styleName="box2">
+		<mx:Button label="Load StyleMod01" height="40" styleName="myStyle03"
+				click="StyleManager.loadStyleDeclarations(styleModPath);" />
+		<mx:Button label="Unload StyleMod01" height="40" styleName="myStyle04"
+				click="StyleManager.unloadStyleDeclarations(styleModPath);" />
+	</mx:HBox>
+</mx:Application>

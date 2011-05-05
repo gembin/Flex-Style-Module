@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module:StyleModule
-		xmlns:fx="http://ns.adobe.com/mxml/2009"
+		xmlns:mx="http://www.adobe.com/2006/mxml"
 		xmlns:module="com.ticore.style.module.*">
-	<fx:Style source="style/Style01.css"/>
-	<fx:Style source="style/Style02.css"/>
-	<fx:Script>
+	<mx:Style source="style/Style01.css"/>
+	<mx:Style source="style/Style02.css"/>
+	<mx:Script>
 		<![CDATA[
-			import spark.components.Application;
+			import mx.core.Application;
 			Application;
 		]]>
-	</fx:Script>
+	</mx:Script>
 </module:StyleModule>
